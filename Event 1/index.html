@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>This is my text</p>
+    <button onclick="submit()">Click</button>
+
+    <p id="text">Original text</p>
+    <button onclick="textchange()">Click</button><br>
+
+    <button onclick="backcolor()">Change color</button><br>
+
+    <p id="hide">Hide paragraph</p>
+    <button onclick="parahide()"> hide</button><br>
+
+    <img id="image" src="image.jpeg" style="display: none;width: 200px;height: 400px;">
+    <button onclick="viewimage()">View image</button>
+</body>
+<script>
+    function submit(){
+        alert("Yes")
+    }
+
+    function textchange(){
+        document.getElementById("text").textContent="Changed Text"
+    }
+
+    function backcolor(){
+        document.body.style.backgroundColor="red" 
+    }
+
+    function parahide(){
+        document.getElementById("hide").style.visibility="hidden"
+    }
+
+    function viewimage(){
+        document.getElementById("image").style.display="block"
+    }    
+</script>
+</html>

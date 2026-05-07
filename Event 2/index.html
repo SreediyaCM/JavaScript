@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="alert('Button Clicked')">Click</button><br>
+
+    <h2 onmouseover="this.style.color='red'" onmouseout="this.style.color='black'"> hiii</h2><br>
+
+    <input type="text" onfocus="this.style.borderColor='blue';this.style.outline='none'">
+
+    <input type="text" id="nam" onchange="change()">
+    <p id="name">New</p>
+    
+</body>
+<script>
+    function change(){
+        let value=document.getElemenById("nam").value;
+        document.getElementById("name").textContent=value;
+        
+    }
+</script>
+</html>  
